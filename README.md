@@ -1,0 +1,2 @@
+# WindowsServiceExample
+pywin32によるWindowsサービスアプリケーションのひな形です。
