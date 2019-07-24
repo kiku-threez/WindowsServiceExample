@@ -1,6 +1,15 @@
 # WindowsServiceExample
 pywin32によるWindowsサービスアプリケーションのひな形です。
 
+* Python Version:  3.7.4
+* pywin32 Version: 224
+
+pywin32のインストール後、以下のパスをシステムの環境変数「PATH」に追加します。
+~~~
+C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Lib\site-packages\win32
+C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Lib\site-packages\pywin32_system32
+~~~
+
 インストール
 >python WindowsServiceExample.py --startup=auto --username .\Administrator --password admin-pass install
 

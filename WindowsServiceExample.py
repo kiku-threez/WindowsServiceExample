@@ -17,7 +17,7 @@ rotateWen = config.get("logging", "rotateWen")
 rotateCount = int(config.get("logging", "rotateCount"))
 log = logger("windowsServiceExample", logPath, rotateWen, rotateCount)
 
-# サービス稼動中かどうかのイベントハンドラ
+# サービス稼動中かどうかのイベント
 hWaitStop = None
 
 class testClass:
