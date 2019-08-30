@@ -7,7 +7,7 @@ import win32event
 from logger import logger
 
 # config
-configPath = os.path.abspath(os.path.dirname(__file__)) + os.path.sep + "settings.conf"
+configPath = os.path.join(os.path.abspath(os.path.dirname(__file__)), "settings.conf")
 config = configparser.RawConfigParser()
 config.read(configPath, "utf-8")
 
