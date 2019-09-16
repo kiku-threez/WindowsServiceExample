@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 import configparser
-import os
 import win32service
 import win32serviceutil
 import win32event
+from pathlib import Path
 from logger import logger
 
 # config
-configPath = os.path.join(os.path.abspath(os.path.dirname(__file__)), "settings.conf")
+configPath = Path(Path(__file__).parent.resolve(), "settings.conf")
 config = configparser.RawConfigParser()
 config.read(configPath, "utf-8")
 
